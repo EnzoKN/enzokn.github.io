@@ -1,43 +1,57 @@
-import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Linkedin, Github, ExternalLink, Download, Code, Users, Lightbulb, Target, ChevronDown, ChevronUp } from 'lucide-react';
+// import React, { useState } from 'react';
+import { 
+    Mail,
+   Phone, 
+   MapPin, 
+   Linkedin, 
+   Github, 
+  //  ExternalLink, 
+   Download, 
+   Code, 
+   Users, 
+  //  Lightbulb, 
+  //  Target, 
+  //  ChevronDown, 
+  //  ChevronUp 
+  } from 'lucide-react';
 
 export default function Portfolio() {
-  const [expandedProject, setExpandedProject] = useState(null);
+  // const [expandedProject, setExpandedProject] = useState(null);
 
   const skills = {
     technical: ['HTML/CSS', 'JavaScript', 'TypeScript', 'React', 'VUE', 'SQL', 'Git', 'Python', 'Java', 'Linux', 'REST APIs', 'Node.js', 'MongoDB'],
     soft: ['Problem Solving', 'Team Collaboration', 'Communication', 'Adaptability', 'Time Management', 'Critical Thinking']
   };
 
-  const projects = [
-    {
-      id: 1,
-      title: 'Personal Finance Tracker',
-      tech: 'React, Local Storage',
-      description: 'A web app to track personal expenses and income with visual charts.',
-      details: 'Built to solve my own budgeting needs. Features include expense categorization, monthly reports, and savings goals tracking. Learned React hooks and data visualization.',
-      link: '#',
-      status: 'Completed'
-    },
-    {
-      id: 2,
-      title: 'Local Business Website Redesign',
-      tech: 'HTML, CSS, JavaScript',
-      description: 'Redesigned a local café website to improve user experience and mobile responsiveness.',
-      details: 'Volunteered to help a local business improve their online presence. Increased mobile usability by 60% and improved loading speed. Gained experience in client communication and project management.',
-      link: '#',
-      status: 'Volunteer Project'
-    },
-    {
-      id: 3,
-      title: 'Weather Dashboard',
-      tech: 'JavaScript, Weather API',
-      description: 'A responsive weather app showing current conditions and 5-day forecast.',
-      details: 'Personal project to learn API integration and responsive design. Features include location search, favorites, and weather alerts. Practicing clean code principles and error handling.',
-      link: '#',
-      status: 'In Progress'
-    }
-  ];
+  // const projects = [
+  //   {
+  //     id: 1,
+  //     title: 'Personal Finance Tracker',
+  //     tech: 'React, Local Storage',
+  //     description: 'A web app to track personal expenses and income with visual charts.',
+  //     details: 'Built to solve my own budgeting needs. Features include expense categorization, monthly reports, and savings goals tracking. Learned React hooks and data visualization.',
+  //     link: '#',
+  //     status: 'Completed'
+  //   },
+  //   {
+  //     id: 2,
+  //     title: 'Local Business Website Redesign',
+  //     tech: 'HTML, CSS, JavaScript',
+  //     description: 'Redesigned a local café website to improve user experience and mobile responsiveness.',
+  //     details: 'Volunteered to help a local business improve their online presence. Increased mobile usability by 60% and improved loading speed. Gained experience in client communication and project management.',
+  //     link: '#',
+  //     status: 'Volunteer Project'
+  //   },
+  //   {
+  //     id: 3,
+  //     title: 'Weather Dashboard',
+  //     tech: 'JavaScript, Weather API',
+  //     description: 'A responsive weather app showing current conditions and 5-day forecast.',
+  //     details: 'Personal project to learn API integration and responsive design. Features include location search, favorites, and weather alerts. Practicing clean code principles and error handling.',
+  //     link: '#',
+  //     status: 'In Progress'
+  //   }
+  // ];
 
   const experience = [
     {
