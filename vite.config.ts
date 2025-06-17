@@ -8,5 +8,8 @@ export default defineConfig({
     tailwindcss(),
     react(),
   ],
-   base: './', 
+  base: '/enzokn.github.io/',
+  build: {
+    outDir: 'dist',
+  },
 })
