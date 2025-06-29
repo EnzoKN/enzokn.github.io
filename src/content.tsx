@@ -51,11 +51,11 @@ const useIntersectionObserver = (
 export default function Portfolio() {
   // create refs for each section
   // and use the custom hook to observe their visibility
-  const [aboutRef, isAboutVisible] = useIntersectionObserver({ threshold: 0.1 });
-  const [skillsRef, isSkillVisible] = useIntersectionObserver({ threshold: 0.1 });
-  const [heroRef, isHeroVisible] = useIntersectionObserver({ threshold: 0.1 });
-  const [ExpRef, isExpVisible] = useIntersectionObserver({ threshold: 0.1 });
-  const [conRef, isConVisible] = useIntersectionObserver({ threshold: 0.1 });
+  const [aboutRef, isAboutVisible] = useIntersectionObserver({ threshold: 0.2 });
+  const [skillsRef, isSkillVisible] = useIntersectionObserver({ threshold: 0.2 });
+  const [heroRef, isHeroVisible] = useIntersectionObserver({ threshold: 0.2 });
+  const [ExpRef, isExpVisible] = useIntersectionObserver({ threshold: 0.2 });
+  const [conRef, isConVisible] = useIntersectionObserver({ threshold: 0.2 });
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const skills = {
     technical: ['HTML/CSS',
@@ -183,7 +183,7 @@ export default function Portfolio() {
 
       {/* Hero Section */}
       <section ref={heroRef} className="
-      w-full 
+      w-full
       bg-gradient-to-br 
       from-purple-50 
       to-grey-50"
@@ -191,7 +191,7 @@ export default function Portfolio() {
         <div className={`
         w-full py-10 px-4
         sm:px-6 sm:py-14
-        lg:px-12 lg:py-18
+        lg:px-60 lg:py-18
         transition-all duration-1000 
         ${isHeroVisible
             ? 'opacity-100 scale-100'
@@ -229,6 +229,7 @@ export default function Portfolio() {
         <div className={`
         max-w-6xl mx-auto 
         px-6 transition-all 
+        lg:px-40
         duration-1000 ${isAboutVisible
             ? 'opacity-100 scale-100'
             : 'opacity-0 scale-95'}
@@ -329,7 +330,7 @@ export default function Portfolio() {
       {/* Experience Section */}
       <section id="experience" className="py-16" ref={ExpRef}>
         <div className={`
-        max-w-6xl mx-auto px-4 sm:px-6 lg:px-8
+        max-w-6xl mx-auto px-4 sm:px-6 md:px-50
         transition-all duration-1000 
         ${isExpVisible
             ? 'opacity-100 scale-100'
@@ -345,7 +346,8 @@ export default function Portfolio() {
               <div key={index} className="p-8">
                 <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
                   <div>
-                    <h3 className="text-lg sm:text-xl font-semibold text-gray-800">{job.title} | {job.company}</h3>
+                    <h3 className="text-lg sm:text-xl font-semibold text-gray-800">{job.title}</h3>
+                    <h3 className="text-lg sm:text-xl text-gray-800">{job.company}</h3>
                   </div>
                   <span className="text-gray-500 text-sm sm:text-base font-medium mt-2 md:mt-0">{job.period}</span>
                 </div>
