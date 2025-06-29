@@ -209,14 +209,17 @@ export default function Portfolio() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <button className="
-            bg-blue-600
-             text-white px-6 sm:px-8 py-3
-              rounded-lg hover:bg-blue-700
-              transition-colors
-              flex items-center
-              justify-center gap-2
-              text-sm sm:text-base
-              ">
+              relative overflow-hidden
+              bg-gradient-to-r from-blue-600 via-purple-600 to-pink-500
+              bg-[length:200%_100%] bg-left
+              hover:bg-right hover:animate-[wave_2s_ease-in-out_infinite]
+            text-white px-6 sm:px-8 py-3
+              rounded-xl transition-all duration-800
+              transform hover:scale-110 hover:shadow-lg
+              flex items-center justify-center gap-2
+              text-sm sm:text-base font-semibold
+              border-0 shadow-md
+            ">
               <Download size={18} />
               Download CV
             </button>
@@ -387,13 +390,17 @@ export default function Portfolio() {
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <a href="mailto:longkangchen@outlook.com"
               className="
-              flex items-center justify-center gap-3
-              text-sm sm:text-base
-              bg-white
-              text-blue-600 truncate
-              w-full max-w-sm sm:w-auto
-              px-4 sm:px-6 py-3 rounded-lg
-              shadow-md hover:shadow-lg transition-shadow
+                relative overflow-hidden
+                flex items-center justify-center gap-3
+                text-sm sm:text-base font-semibold
+                bg-gradient-to-r from-blue-600 via-purple-600 to-pink-500
+                bg-[length:200%_100%] bg-left
+                hover:bg-right hover:animate-[wave_2s_ease-in-out_infinite]
+              !text-white truncate
+                w-full max-w-sm sm:w-auto
+                px-4 sm:px-6 py-3 rounded-xl
+                shadow-md hover:shadow-lg transition-all duration-800
+                transform hover:scale-105
               ">
               <Mail size={20} />
               longkangchen@outlook.com
