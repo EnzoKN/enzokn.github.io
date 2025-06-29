@@ -292,7 +292,7 @@ export default function Portfolio() {
           ? 'opacity-100 scale-100'
           : 'opacity-0 scale-95'
           }`}>
-          <h2 className="text-3xl font-bold text-gray-700 text-left mb-12 flex items-center gap-4">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-700 text-left mb-12 flex items-center gap-4">
             Skills & Technologies
             <span className="h-0.25 w-80 bg-gray-500"></span>
           </h2>
