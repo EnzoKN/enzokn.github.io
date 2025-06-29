@@ -4,14 +4,9 @@ import {
   MapPin,
   Linkedin,
   Github,
-  //  ExternalLink, 
   Download,
   Code,
   Users,
-  //  Lightbulb, 
-  //  Target, 
-  //  ChevronDown, 
-  //  ChevronUp 
 } from 'lucide-react';
 // custome hook for intersection observer
 const useIntersectionObserver = (
@@ -54,9 +49,9 @@ const useIntersectionObserver = (
 export default function Portfolio() {
   // create refs for each section
   // and use the custom hook to observe their visibility
-  const [aboutRef, isSection1Visible] = useIntersectionObserver({ threshold: 0.3 });
-  const [skillsRef, isSection2Visible] = useIntersectionObserver({ threshold: 0.3 });
-  const [heroRef, isSection3Visible] = useIntersectionObserver({ threshold: 0.3 });
+  const [aboutRef, isAboutVisible] = useIntersectionObserver({ threshold: 0.3 });
+  const [skillsRef, isSkillVisible] = useIntersectionObserver({ threshold: 0.3 });
+  const [heroRef, isHeroVisible] = useIntersectionObserver({ threshold: 0.3 });
   const [ExpRef, isExpVisible] = useIntersectionObserver({ threshold: 0.3 });
   const [conRef, isConVisible] = useIntersectionObserver({ threshold: 0.3 });
 
@@ -146,7 +141,7 @@ export default function Portfolio() {
         max-w-7xl 
         mx-auto px-6 mt-20 mb-20 
         transition-all duration-1000 
-        ${isSection3Visible
+        ${isHeroVisible
             ? 'opacity-100 scale-100'
             : 'opacity-0 scale-95'
           }`}>
@@ -179,7 +174,7 @@ export default function Portfolio() {
         <div className={`
         max-w-6xl mx-auto 
         px-6 pl-40 transition-all 
-        duration-1000 ${isSection1Visible
+        duration-1000 ${isAboutVisible
             ? 'opacity-100 scale-100'
             : 'opacity-0 scale-95'}
             `}>
@@ -230,7 +225,7 @@ export default function Portfolio() {
 
       {/* Skills Section */}
       <section id="skills" className="py-16" ref={skillsRef}>
-        <div className={`max-w-6xl mx-auto px-6 transition-all duration-1000 ${isSection2Visible
+        <div className={`max-w-6xl mx-auto px-6 transition-all duration-1000 ${isSkillVisible
           ? 'opacity-100 scale-100'
           : 'opacity-0 scale-95'
           }`}>
