@@ -51,11 +51,11 @@ const useIntersectionObserver = (
 export default function Portfolio() {
   // create refs for each section
   // and use the custom hook to observe their visibility
-  const [aboutRef, isAboutVisible] = useIntersectionObserver({ threshold: 0.3 });
-  const [skillsRef, isSkillVisible] = useIntersectionObserver({ threshold: 0.3 });
-  const [heroRef, isHeroVisible] = useIntersectionObserver({ threshold: 0.3 });
-  const [ExpRef, isExpVisible] = useIntersectionObserver({ threshold: 0.3 });
-  const [conRef, isConVisible] = useIntersectionObserver({ threshold: 0.3 });
+  const [aboutRef, isAboutVisible] = useIntersectionObserver({ threshold: 0.1 });
+  const [skillsRef, isSkillVisible] = useIntersectionObserver({ threshold: 0.1 });
+  const [heroRef, isHeroVisible] = useIntersectionObserver({ threshold: 0.1 });
+  const [ExpRef, isExpVisible] = useIntersectionObserver({ threshold: 0.1 });
+  const [conRef, isConVisible] = useIntersectionObserver({ threshold: 0.1 });
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const skills = {
     technical: ['HTML/CSS',
