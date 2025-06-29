@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import {
   Mail,
-  Phone,
   MapPin,
   Linkedin,
   Github,
@@ -53,7 +52,6 @@ const useIntersectionObserver = (
 };
 
 export default function Portfolio() {
-  // const [expandedProject, setExpandedProject] = useState(null);
   // create refs for each section
   // and use the custom hook to observe their visibility
   const [aboutRef, isSection1Visible] = useIntersectionObserver({ threshold: 0.3 });
@@ -82,24 +80,6 @@ export default function Portfolio() {
   //     details: 'Built to solve my own budgeting needs. Features include expense categorization, monthly reports, and savings goals tracking. Learned React hooks and data visualization.',
   //     link: '#',
   //     status: 'Completed'
-  //   },
-  //   {
-  //     id: 2,
-  //     title: 'Local Business Website Redesign',
-  //     tech: 'HTML, CSS, JavaScript',
-  //     description: 'Redesigned a local café website to improve user experience and mobile responsiveness.',
-  //     details: 'Volunteered to help a local business improve their online presence. Increased mobile usability by 60% and improved loading speed. Gained experience in client communication and project management.',
-  //     link: '#',
-  //     status: 'Volunteer Project'
-  //   },
-  //   {
-  //     id: 3,
-  //     title: 'Weather Dashboard',
-  //     tech: 'JavaScript, Weather API',
-  //     description: 'A responsive weather app showing current conditions and 5-day forecast.',
-  //     details: 'Personal project to learn API integration and responsive design. Features include location search, favorites, and weather alerts. Practicing clean code principles and error handling.',
-  //     link: '#',
-  //     status: 'In Progress'
   //   }
   // ];
 
@@ -352,10 +332,10 @@ export default function Portfolio() {
             </a>
           </div>
           <div className="flex gap-4 justify-center mt-8">
-            <a href="#" className="p-3 rounded-full">
+            <a href="https://www.linkedin.com/in/longchen0/" className="p-3 rounded-full">
               <Linkedin size={24} />
             </a>
-            <a href="#" className="p-3 rounded-full">
+            <a href="https://github.com/LoganChenn" className="p-3 rounded-full">
               <Github size={24} />
             </a>
           </div>
